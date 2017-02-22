@@ -10,6 +10,7 @@ Note that Linux is the priority here, as for now SSH.pm doesn't intend to suppor
 **But as soon as we get to alpha phase we *will* add support to other Unix-like systems**
 
 
+
 ## Build automation
 
 Execute the build automation script:
@@ -18,5 +19,5 @@ Execute the build automation script:
 
 All Dockerfiles inside the `docker/` path will be built.
 
-Note that all Dockerfiles  should respect the pattern `Dockerfile.$IMAGE_TAG`.
+Note that all Dockerfiles  should respect the follow pattern: `Dockerfile.$IMAGE_TAG`.
 
