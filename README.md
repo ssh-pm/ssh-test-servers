@@ -8,3 +8,15 @@ SSH.pm manages machines that accept SSH connection, they may be physical machine
 Note that Linux is the priority here, as for now SSH.pm doesn't intend to support Windows, and does not guarantee compatibility with OS X, BSD, or another Unix-like opertating systems.
 
 **But as soon as we get to alpha phase we *will* add support to other Unix-like systems**
+
+
+## Build automation
+
+Execute the build automation script:
+
+`./build-images`
+
+All Dockerfiles inside the `docker/` path will be built.
+
+Note that all Dockerfiles  should respect the pattern `Dockerfile.$IMAGE_TAG`.
+
