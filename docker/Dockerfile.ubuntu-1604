@@ -18,8 +18,3 @@ RUN echo "export VISIBLE=now" >> /etc/profile
 
 EXPOSE 22
 CMD ["/bin/bash", "-c", "/usr/sbin/sshd && tail -f /dev/null"]
-
-#Load utils scripts
-RUN mkdir -p /var/scripts
-ADD ./scripts/test_sudo.sh /var/scripts/test_sudo.sh
-RUN chmod +x /var/scripts/test_sudo.sh
